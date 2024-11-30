@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Manage Products and Categories</title>
+  
+  <link rel="stylesheet" href="../css/manage-products.css">
+  <link rel="stylesheet" href="../css/nav_style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Admin Panel</div>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="browse.html">Browse</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Manage Products</h1>
+
+    <!-- Manage Products Section -->
+    <table id="product-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="product-table-body">
+        <!-- Products will be dynamically populated -->
+      </tbody>
+    </table>
+
+    <button id="new-product-button">New Product</button>
+
+    <form id="productForm" style="display: none;">
+      <h2>Add New Product</h2>
+      <label for="productName">Name:</label>
+      <input type="text" id="productName" name="productName" required>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" step="0.01" required>
+
+      <label for="categoryId">Category:</label>
+      <select id="categoryId" name="categoryId" required>
+        <!-- Categories will be dynamically populated -->
+      </select>
+
+      <label for="image">Image:</label>
+      <input type="file" id="image" name="image" accept="image/*">
+
+      <button type="submit">Add Product</button>
+    </form>
+
+    <div id="editForm" style="display: none;">
+      <h2>Edit Product</h2>
+      <form>
+        <input type="hidden" id="editProductId" />
+        <label for="editProductName">Name:</label>
+        <input type="text" id="editProductName" />
+        <label for="editDescription">Description:</label>
+        <textarea id="editDescription"></textarea>
+        <label for="editPrice">Price:</label>
+        <input type="text" id="editPrice" />
+        <label for="editCategoryId">Category:</label>
+        <select id="editCategoryId"></select>
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+
+    <!-- Manage Categories Section -->
+    <div id="manage-categories">
+      <h2>Manage Categories</h2>
+
+      <table id="category-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Category Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="category-table-body">
+          <!-- Categories will be dynamically populated -->
+        </tbody>
+      </table>
+
+      <button id="new-category-button">New Category</button>
+
+      <form id="categoryForm" style="display: none;">
+        <h3>Add New Category</h3>
+        <label for="categoryName">Category Name:</label>
+        <input type="text" id="categoryName" name="categoryName" required>
+        <button type="submit">Add Category</button>
+      </form>
+
+      <div id="editCategoryForm" style="display: none;">
+        <h3>Edit Category</h3>
+        <form>
+          <input type="hidden" id="editCategoryId" />
+          <label for="editCategoryName">Category Name:</label>
+          <input type="text" id="editCategoryName" />
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="manage-orders">
+        <h2>Manage Orders</h2>
+        <table id="order-table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>User</th>
+              <th>Total</th>
+              <th>Order Date</th>
+              <th>Items</th>
+            </tr>
+          </thead>
+          <tbody id="order-table-body">
+            <!-- Orders will be dynamically populated -->
+          </tbody>
+        </table>
+      </div>
+      
+  </main>
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/manage-products.js"></script>
+  <script src="../js/categories.js" defer></script>
+  <script src="../js/manage-orders.js" defer></script>
+
+</body>
+</html>

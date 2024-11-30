@@ -1,0 +1,97 @@
+/* General Navigation Bar Styling */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e1e1e; /* Dark background */
+  color: #f0f0f0; /* Light text color */
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: inherit; /* Inherit color for consistency */
+  margin-left: 2vh;
+}
+
+nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 2vh;
+}
+
+nav .nav-links a {
+  color: inherit; /* Inherit text color for consistency */
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+nav .nav-links a:hover {
+  background-color: #333333; /* Slightly lighter hover effect */
+  color: #ffffff; /* Brighten link text on hover */
+}
+
+/* Profile Picture Styling */
+.profile-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 10px; /* Spacing for profile link */
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular profile picture */
+  object-fit: cover;
+  border: 2px solid #f0f0f0; /* Optional border */
+  cursor: pointer; /* Makes the profile picture clickable */
+  transition: border-color 0.3s ease; /* Smooth hover effect */
+}
+
+.profile-picture:hover {
+  border-color: #007bff; /* Highlight border on hover */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  nav .logo {
+    font-size: 20px;
+  }
+  
+  nav .nav-links a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .profile-picture {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .logo {
+    font-size: 18px;
+  }
+  
+  nav .nav-links a {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .profile-picture {
+    width: 30px;
+    height: 30px;
+  }
+}

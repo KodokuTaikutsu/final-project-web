@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Products - Left-Handed Store</title>
+  
+  <link rel="stylesheet" href="../css/browse_style.css">
+  <link rel="stylesheet" href="../css/nav_style.css">
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <div class="logo">Left-Handed Store</div>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="browse.html">Browse</a>
+      <a href="cart.html" id="cartLink">Cart</a>
+      <a id="loginButton" href="/html/login.html">Log In</a>
+      <img class="profile-picture" id="navProfilePic" src="" alt="Profile Picture" style="display: none;">
+    </div>
+  </nav>
+
+  <!-- Browse Products Section -->
+  <div class="browse-container">
+    <h1>Browse Products</h1>
+
+    <!-- Category Filter and Search Bar -->
+    <div class="search-bar-container">
+      <select id="category-filter">
+        <option value="">All Categories</option>
+        <!-- Options will be dynamically populated -->
+      </select>
+      <input type="text" id="search-bar" placeholder="Search for products...">
+      <button id="search-button">Search</button>
+    </div>
+
+    <!-- Product List -->
+    <div class="product-list"></div>
+  </div>
+
+  <script src="../js/nav.js"></script>
+  <script type="module" src="../js/browse/browse.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #f0f0f0; /* Light text */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px; /* Adjust for nav height */
+}
+
+.slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: 20px auto;
+  margin-top: 0;
+}
+
+.slide {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.slideshow-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.slideshow-overlay h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  color: #f0f0f0; /* Light text */
+}
+
+.slideshow-overlay p {
+  margin: 0 0 20px;
+  font-size: 18px;
+  color: #f0f0f0; /* Light text */
+}
+
+.browse-button {
+  background-color: #008080; /* Teal button */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.browse-button:hover {
+  background-color: #20b2aa; /* Lighter teal for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .browse-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .browse-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

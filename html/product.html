@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - Left-Handed Store</title>
+  
+  <link rel="stylesheet" href="../css/product_style.css">
+  <link rel="stylesheet" href="../css/nav_style.css">
+  
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <div class="logo">Left-Handed Store</div>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="browse.html">Browse</a>
+      <a href="cart.html" id="cartLink">Cart</a>
+      <a id="loginButton" href="/html/login.html">Log In</a>
+      <img class="profile-picture" id="navProfilePic" src="" alt="Profile Picture" style="display: none;">
+    </div>
+  </nav>
+
+ <!-- Product Details Section -->
+<div class="product-container">
+  <!-- Placeholder for Main image -->
+  <div class="main-image">
+    <img id="main-product-image" src="" alt="Main Product Image">
+  </div>
+
+  <!-- Product details -->
+  <div class="product-details">
+    <h1 id="product-name">Loading...</h1>
+    <p class="price" id="product-price">Price: $0.00</p>
+    <p id="product-description">Description: Loading product details...</p>
+    
+    <!-- Quantity Selector -->
+    <label for="quantity">Quantity:</label>
+    <select id="quantity" class="quantity-selector">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    
+   
+
+    <button id="addToCartButton" class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+
+  <script src="/js/nav.js"></script>
+  <script src="/js/addToCart.js"></script>
+  <script src="/js/product.js"></script>
+
+</body>
+</html>

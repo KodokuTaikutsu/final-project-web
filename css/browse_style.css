@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #f0f0f0; /* Light text */
+  margin: 0;
+  padding-top: 80px; /* Adjust for nav height */
+}
+
+.browse-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #f0f0f0;
+}
+
+/* Search Bar Container */
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#category-filter {
+  padding: 10px 20px;
+  background-color: #008080; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  appearance: none; 
+  position: relative;
+}
+
+#category-filter:hover {
+  background-color: #20b2aa; 
+}
+
+#category-filter:focus {
+  outline: none; 
+  background-color: #20b2aa;
+}
+
+/* Add custom arrow for the dropdown */
+#category-filter::after {
+  content: "▼"; /* Unicode for down arrow */
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  right: 15px;
+  pointer-events: none; /* Make the arrow non-clickable */
+}
+
+#search-bar {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #333333;
+  background-color: #333333;
+  color: #f0f0f0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#search-button:hover {
+  background-color: #20b2aa;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.product-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.product-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.product-details {
+  flex-grow: 1;
+}
+
+.product-details h2 {
+  font-size: 22px;
+  color: #4a70d4; /* Light blue for product titles */
+  margin: 0 0 10px;
+}
+
+.product-details p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f0f0f0;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #008080; /* Teal price color */
+  margin: 10px 0;
+}
+
+.product-button {
+  display: inline-block;
+  background-color: #008080;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.product-button:hover {
+  background-color: #20b2aa;
+}

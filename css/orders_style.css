@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .orders-container {
+    max-width: 800px;
+    margin: 120px auto; /* Ensure it doesn't interfere with the nav */
+    padding: 20px;
+    background-color: #1e1e1e; /* Slightly lighter dark */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .orders-container h1 {
+    text-align: center;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+  }
+  
+  .order {
+    border: 1px solid #333;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #242424;
+  }
+  
+  .order-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .order-items {
+    margin-top: 10px;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .order-item:nth-child(odd) {
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  /* Navigation styles remain unaffected */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  nav .nav-links a:hover {
+    text-decoration: underline;
+  }
+  

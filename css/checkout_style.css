@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    margin: 0;
+    margin-top: 10vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px; /* Adjust for nav height */
+  }
+  
+  main {
+    width: 90%;
+    max-width: 800px;
+    background-color: #1e1e1e; /* Slightly lighter dark for contrast */
+    color: #f0f0f0; /* Light text for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #20b2aa; /* Teal for emphasis */
+  }
+  
+  .checkout-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .checkout-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #2a2a2a; /* Slightly lighter background for items */
+    border-radius: 5px;
+    align-items: center;
+  }
+  
+  .checkout-item-details {
+    flex: 1;
+  }
+  
+  .checkout-item-details h2 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #f0f0f0;
+  }
+  
+  .checkout-item-details p {
+    margin: 0;
+    font-size: 16px;
+    color: #cccccc; /* Softer color for secondary info */
+  }
+  
+  .checkout-item-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #20b2aa; /* Highlighted teal for price */
+  }
+  
+  #total-price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    color: #f0f0f0;
+  }
+  
+  .checkout-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #008080; /* Teal button for primary action */
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #20b2aa; /* Lighter teal on hover */
+  }
+  
+  #place-order-button {
+    background-color: #20b2aa; /* Lighter teal for emphasis */
+  }
+  
+  #place-order-button:hover {
+    background-color: #008080; /* Reverse teal for hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    main {
+      padding: 15px;
+    }
+  
+    .checkout-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    #total-price {
+      font-size: 18px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 22px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
+  

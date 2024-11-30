@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="../css/profile_style.css">
+  <link rel="stylesheet" href="../css/nav_style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">My App</div>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../html/browse.html">Browse</a>
+      <a href="cart.html" id="cartLink">Cart</a>
+      <button id="logoutButton">Log Out</button>
+    </div>
+  </nav>
+
+  <!-- Profile Page Content -->
+  <div class="profile-container">
+    <h1>Your Profile</h1>
+
+    <!-- Current Profile Information -->
+    <div class="profile-picture-container">
+      <img id="currentProfilePicture" src="../images/default-avatar.png" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 5px; margin-bottom: 15px;">
+      <p id="username">Full Name: Loading...</p>
+      <p id="email">Email: Loading...</p>
+    </div>
+
+    <!-- Upload New Profile Picture -->
+    <div class="upload-container">
+      <h2>Update Profile Picture</h2>
+      <form id="updateProfilePictureForm">
+        <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+        <button type="submit">Upload Picture</button>
+      </form>
+    </div>
+
+    <!-- Address Management Section -->
+    <div class="address-container">
+      <h2>Your Addresses</h2>
+      <div id="addresses-container">
+        <!-- Existing addresses will be displayed here -->
+      </div>
+      <button id="addAddressButton">Add Address</button>
+
+      <!-- New Address Forms -->
+      <div id="newAddressForms" style="display: none;">
+        <div id="addressFormTemplate" class="address-form">
+          <label>Address Line:</label>
+          <input type="text" name="address_line" required>
+          <label>City:</label>
+          <input type="text" name="city" required>
+          <label>State:</label>
+          <input type="text" name="state" required>
+          <label>Postal Code:</label>
+          <input type="text" name="postal_code" required>
+          <label>Country:</label>
+          <input type="text" name="country" required>
+        </div>
+        <button id="addMoreAddressForm">Add More Address</button>
+        <button id="submitAddresses">Submit Addresses</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/profile.js"></script>
+  <script src="../js/address.js"></script>
+</body>
+</html>
